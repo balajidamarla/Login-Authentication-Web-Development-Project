@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login 03</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+            <div class="form-side">
+                <form class="my-form">
+                    <div class="form-welcome-row">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="socials-row">
+                        <a href="#" title="Use Google">
+                            <img src="google.png" alt="Google">Use Google
+                        </a>
+                       
+                    </div>
+                    <div class="divider">
+                        <div class="divider-line"></div> Or <div class="divider-line"></div>
+                    </div>
+                    <div class="text-field">
+                        <label for="email">Email:
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="off"
+                                placeholder="Your Email"
+                                required
+                            >
+                            
+                        </label>
+                    </div>
+                    <div class="text-field">
+                        <label for="password">Password:
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                placeholder="Your Password"
+                                title="Minimum 6 characters at 
+                                    least 1 Alphabet and 1 Number"
+                                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                                required
+                            >
+                            
+                        </label>
+                    </div>
+                    <button type="submit" class="my-form__button">
+                        Login
+                    </button>
+                    <div class="my-form__actions">
+                        <a href="#" title="Reset Password">
+                            Reset Password
+                        </a>
+                        <a href="#" title="Create Account">
+                            Already have an account?
+                        </a>
+                    </div>
+                </form>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
